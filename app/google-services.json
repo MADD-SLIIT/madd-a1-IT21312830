@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "955628761930",
+    "project_id": "island-spotter-aae5c",
+    "storage_bucket": "island-spotter-aae5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955628761930:android:59ba09d18ff9d1525687b3",
+        "android_client_info": {
+          "package_name": "com.example.island_spotter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyGjvEIqq3Kq46Nd_Bd-RemQRP_R543BM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

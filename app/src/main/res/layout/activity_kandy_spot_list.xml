@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KandySpotListActivity">
+
+    <LinearLayout
+        android:id="@+id/spot_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@android:color/black"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/sub_spot_label"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Kandy"
+            android:textColor="@color/black"
+            android:textSize="28dp" />
+
+    </LinearLayout>
+
+    <!--    <androidx.appcompat.widget.SearchView-->
+    <!--        android:id="@+id/search_view"-->
+    <!--        android:background="@drawable/edittext_border"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:queryHint="Search..."-->
+    <!--        android:layout_marginTop="100dp"-->
+    <!--        app:iconifiedByDefault="false"-->
+    <!--        android:layout_margin="8dp"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="4dp" />
+
+</LinearLayout>

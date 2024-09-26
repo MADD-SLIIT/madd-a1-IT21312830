@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore Quests" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:text="Last Minute" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:background="@drawable/edittext_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:queryHint="Search..."
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:iconifiedByDefault="false"
+            android:layout_margin="8dp"/>
+
+        <!--        <include-->
+        <!--            layout="@layout/activity_list"/>-->
+
+        <!--        <ListView-->
+        <!--            android:id="@+id/main_list_view"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            tools:listitem="@layout/activity_spot"/>-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/kandy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:context=".SpotActivity">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/spot_image1"
+                                android:layout_height="150dp"
+                                android:background="@drawable/kandy"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Kandy"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spot_name1"
+                                android:text="Kandy"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="100dp" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/colombo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:context=".SpotActivity">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/spot_image2"
+                                android:layout_height="150dp"
+                                android:background="@drawable/colombo"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Colombo"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spot_name2"
+                                android:text="Colombo"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="100dp" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/anuradhapura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:context=".SpotActivity">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/spot_image3"
+                                android:layout_height="150dp"
+                                android:background="@drawable/hambantota"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Hambantota"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spot_name3"
+                                android:text="Hambantota"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="100dp" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/galle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:context=".SpotActivity">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/spot_image4"
+                                android:layout_height="150dp"
+                                android:background="@drawable/galle"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Galle"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spot_name4"
+                                android:text="Galle"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="100dp" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/matara"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:context=".SpotActivity">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/spot_image5"
+                                android:layout_height="150dp"
+                                android:background="@drawable/matara"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Matara"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spot_name5"
+                                android:text="Matara"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="100dp" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/jaffna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:context=".SpotActivity">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/spot_image6"
+                                android:layout_height="150dp"
+                                android:background="@drawable/jaffna"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Jaffna"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spot_name6"
+                                android:text="Jaffna"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="100dp" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/puttlam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:context=".SpotActivity">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/spot_image7"
+                                android:layout_height="150dp"
+                                android:background="@drawable/puttalam"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Puttalam"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spot_name7"
+                                android:text="Puttalam"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="100dp" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/kegalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:context=".SpotActivity">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/spot_image8"
+                                android:layout_height="150dp"
+                                android:background="@drawable/kegalle"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Kegalle"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spot_name8"
+                                android:text="Kegalle"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="100dp" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/badulla"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:context=".SpotActivity">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/spot_image9"
+                                android:layout_height="150dp"
+                                android:background="@drawable/badulla"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Badulla"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spot_name9"
+                                android:text="Badulla"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="100dp" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/polonnaruwa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:context=".SpotActivity">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/spot_image10"
+                                android:layout_height="150dp"
+                                android:background="@drawable/polonnaruwa"
+                                android:scaleType="centerCrop"
+                                android:contentDescription="Polonnaruwa"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spot_name10"
+                                android:text="Polonnaruwa"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="100dp" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <!--            scroll view ends here-->
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+<!--horiontal layout list-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Most Popular Spots"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_view_horizontal"
+            tools:listitem="@layout/activity_horizontal_spot"
+            android:orientation="horizontal"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemIconSize="24dp"
+        app:itemPadding="8dp"
+        app:labelVisibilityMode="labeled"
+        android:id="@+id/bottom_nav_bar"
+        app:menu="@menu/bottom_nav_bar"/>
+
+</LinearLayout>
